@@ -9,8 +9,14 @@ RSpec.describe "Validate rover movements" do
     end
 
     context "to validate if the rover turns as expected in left direction" do
-        it "should match the value of final direction of the rover face in all the directions with expected values" do
+        it "should match the value of final direction of the rover face in all the directions with expected values, when turned left" do
             expect(turn_rover_left('N')).to eq('W')
+        end
+    end
+
+    context "to validate if the rover turns right as expected" do
+        it "should match the value of final direction of the rover face in all the directions with expected values, when turned right" do
+            expect(turn_rover_left('N')).to eq('E')
         end
     end
 
