@@ -7,4 +7,3 @@ gem 'rake'
 gem 'rspec'
 
 ruby '3.0.6'
-ruby '3.2.2'
