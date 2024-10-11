@@ -22,7 +22,7 @@ RSpec.describe "Validate rover movements" do
 
     context "to validate if the rover moves forward as expected" do
         it "should match the cordinates of the new position when moved 1 step forward" do
-            expect(move_rover_forward('x,y')).to eq('x,y+1')
+            expect(move_rover_forward(1,2)).to eq([1,3])
         end
     end
 
