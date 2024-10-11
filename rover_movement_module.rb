@@ -1,3 +1,4 @@
-def turns_left(rover_face_direction)
+def move_rover(rover_face_direction)
     return 'W'
 end
+
