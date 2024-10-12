@@ -74,9 +74,9 @@ end
 def move_rover_to_new_position_within_coordinates(x_coordinate_pleateau, y_coordinate_pleateau, rover_x_coordinate, rover_y_coordinate, rover_face_direction, instructions)
     x_coordinate_aftermovement, y_coordinate_aftermovement = move_rover_to_new_position(rover_x_coordinate, rover_y_coordinate, rover_face_direction, instructions)
     
-    if (x_coordinate_aftermovement <= x_coordinate_pleateau) || (y_coordinate_aftermovement) <= (y_coordinate_pleateau) || (x_coordinate_aftermovement >=0) || (y_coordinate_aftermovement <= 0)
+    if (x_coordinate_aftermovement <= x_coordinate_pleateau) && (y_coordinate_aftermovement) && (y_coordinate_pleateau) && (x_coordinate_aftermovement >=0) || (y_coordinate_aftermovement <= 0)
         return true
-    else 
+    elsif (x_coordinate_aftermovement >= x_coordinate_pleateau) || (y_coordinate_aftermovement) >= (y_coordinate_pleateau) || (x_coordinate_aftermovement <0) || (y_coordinate_aftermovement < 0) 
         return false
     end
 end
