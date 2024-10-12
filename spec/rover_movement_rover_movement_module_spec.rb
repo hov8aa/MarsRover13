@@ -26,8 +26,8 @@ RSpec.describe "Validate rover movements" do
         end
     end
 
-    context "to validate if the rover's final face direction after after a series of instructions" do
-        it "should match the final face position after a series of movements with the expected final face direction" do
+    context "to validate if the rover moves forward in any direction" do
+        it "should match the final face position with the expected final position" do
             expect(move_rover_in_any_direction(1, 2,'N')).to eq([1,3])
         end
     end
@@ -35,6 +35,12 @@ RSpec.describe "Validate rover movements" do
     context "to validate if the rover's final position after after a series of instructions" do
         it "should match the final position after a series of movements with the expected final position" do
             expect(move_rover_to_new_position(1, 2,'N', 'LMLMLMLMM')).to eq([1,3,'N'])
+        end
+    end
+
+    context "to validate if the rover is moving within the given plateau coordinates"do
+        it "should find out the final position of the rover and see if it's within plateau coordinates" do
+            expect(move_rover_to_new_position_within_coordinates(1, 2,'N', 'LMLMLMLMM')).to eq(true)
         end
     end
 =begin

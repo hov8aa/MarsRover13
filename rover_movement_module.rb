@@ -70,3 +70,9 @@ def move_rover_to_new_position(rover_x_coordinate, rover_y_coordinate, rover_fac
     end
     return rover_x_coordinate, rover_y_coordinate, rover_face_direction
 end
+
+=begin
+def move_rover_to_new_position_within_coordinates(1, 2,'N', 'LMLMLMLMM')
+    return true
+end
+=end
