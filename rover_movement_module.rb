@@ -82,3 +82,6 @@ def move_rover_to_new_position_within_coordinates(x_coordinate_pleateau, y_coord
         return false # Default to false if no conditions match
     end
 end
+
+#def flying_rover((x_coordinate_pleateau, y_coordinate_pleateau, R_x_coordinate, R_y_coordinate, R_face, R_x_coordinate_new, R_y_coordinate_new))
+#end
