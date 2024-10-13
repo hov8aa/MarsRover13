@@ -47,12 +47,10 @@ RSpec.describe "Validate rover movements" do
             expect(move_rover_to_new_position_within_coordinates(5,5,6, 2,'N', 'LMLMLMLMMMMMMMMMMMMMM')).to eq(false)
         end
     end
-=begin
-    Dummy Context
-    context "" do
-        it "" do
-            expect().to eq()
+
+    context "to validate if the rover could fly to the new position within plateau" do
+        it "should validate the final position with rover size & return trie is it landed on plateau itself " do
+            expect(flying_rover(5,5,1,2,'N',3,3)).to eq(true)
         end
     end
-=end
 end
