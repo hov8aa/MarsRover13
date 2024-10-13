@@ -38,8 +38,8 @@ RSpec.describe "Validate rover movements" do
         end
     end
 
-    context "to validate if the rover is moving within the given plateau coordinates"do
-        it "should find out the final position of the rover and see if it's within plateau coordinates" do
+    context "to validate if the rover within plateau coordinates"do
+        it "should find out the final position of the rover and see if it's within plateau" do
             expect(move_rover_to_new_position_within_coordinates(5,5,1, 2,'N', 'LMLMLMLMM')).to eq(true)
         end
 
